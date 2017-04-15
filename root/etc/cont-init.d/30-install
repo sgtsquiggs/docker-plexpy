@@ -1,0 +1,6 @@
+#!/usr/bin/with-contenv bash
+
+# install app
+if [[ ! -d "/app/plexpy/.git" ]]; then
+    git clone --branch master https://github.com/JonnyWong16/plexpy.git /app/plexpy
+fi
