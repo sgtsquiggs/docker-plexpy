@@ -5,7 +5,12 @@ RUN \
 # install packages
     apk add --no-cache \
         git \
-        python
+        python \
+        py-cryptography \
+        py-cffi \
+        py-enum34 \
+        py-openssl \
+        py-six
 
 # add local files
 COPY root/ /
